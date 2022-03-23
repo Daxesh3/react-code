@@ -1,0 +1,174 @@
+{
+	"name": "playtime",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"3.0.0": "^3.0.0",
+		"@babel/runtime": "7.0.0-beta.55",
+		"@date-io/moment": "^1.3.11",
+		"@material-ui/core": "^3.8.1",
+		"@material-ui/styles": "^4.10.0",
+		"@types/classnames": "^2.2.10",
+		"@types/jest": "24.0.11",
+		"@types/node": "11.13.7",
+		"@types/react": "16.8.14",
+		"@types/react-dom": "16.8.4",
+		"@types/react-select": "^2.0.19",
+		"@types/uuid": "^3.4.9",
+		"axios": "^0.18.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"bootstrap-v4-rtl": "^4.1.1-0",
+		"classnames": "^2.2.6",
+		"crypto-js": "^3.3.0",
+		"formik": "^1.5.8",
+		"install": "^0.10.1",
+		"jss-rtl": "^0.2.3",
+		"lodash": "^4.17.20",
+		"moment": "^2.29.1",
+		"moment-timezone": "^0.5.31",
+		"node_env": "^0.0.3",
+		"npm": "^6.14.4",
+		"query-string": "^6.13.6",
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0",
+		"react-paginate": "^6.5.0",
+		"react-redux": "^6.0.1",
+		"react-router": "^4.3.1",
+		"react-router-dom": "^4.3.1",
+		"react-scripts": "^3.4.0",
+		"react-select": "^2.4.4",
+		"react-toastify": "^5.5.0",
+		"redux": "^4.0.5",
+		"react-custom-scrollbars": "^4.2.1",
+		"redux-thunk": "^2.3.0",
+		"typescript": "3.9.6",
+		"url-search-params": "^1.1.0",
+		"uuid": "^3.4.0",
+		"yup": "^0.27.0"
+	},
+	"scripts": {
+		"start": "BROWSER=none react-scripts start",
+		"build": "react-scripts --max_old_space_size=2048 build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"lint": "eslint src/**/*.{ts,tsx}"
+	},
+	"devDependencies": {
+		"@types/axios": "^0.14.0",
+		"@types/crypto-js": "^3.1.47",
+		"@types/lodash": "^4.14.162",
+		"@types/moment-timezone": "^0.5.30",
+		"@types/react-custom-scrollbars": "^4.0.7",
+		"@types/query-string": "^6.3.0",
+		"@types/react-paginate": "^6.2.1",
+		"@types/react-redux": "^7.1.9",
+		"@types/react-router-dom": "^4.3.5",
+		"@types/recharts": "^1.8.16",
+		"@types/redux": "^3.6.0",
+		"@types/redux-thunk": "^2.1.0",
+		"@types/yup": "^0.26.37",
+		"bootstrap": "^4.5.3",
+		"date-fns": "^2.16.1",
+		"eslint-plugin-react": "^7.21.5",
+		"husky": "^2.7.0",
+		"lint-staged": "^8.2.1",
+		"mrm": "^1.2.2",
+		"node-sass": "^4.14.1",
+		"tslint-config-airbnb": "^5.11.2",
+		"tslint-config-standard": "^8.0.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{ts,tsx}": [
+			"eslint --fix",
+			"git add"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"plugin:react/recommended"
+		],
+		"plugins": [
+			"react"
+		],
+		"rules": {
+			"react/prop-types": [
+				0
+			],
+			"react/no-redundant-should-component-update": [
+				2
+			],
+			"react/no-typos": [
+				2
+			],
+			"react/no-this-in-sfc": [
+				2
+			],
+			"react/no-unescaped-entities": [
+				2
+			],
+			"react/no-unknown-property": [
+				2
+			],
+			"react/no-unsafe": [
+				2
+			],
+			"react/no-unused-state": [
+				2
+			],
+			"react/no-will-update-set-state": [
+				2
+			],
+			"react/prefer-stateless-function": [
+				1
+			],
+			"react/self-closing-comp": [
+				1
+			],
+			"react/jsx-no-bind": [
+				1
+			],
+			"react/jsx-fragments": [
+				1,
+				"syntax"
+			],
+			"react/jsx-pascal-case": [
+				2
+			],
+			"react/sort-comp": [
+				2,
+				{
+					"order": [
+						"instance-variables",
+						"static-methods",
+						"lifecycle",
+						"everything-else",
+						"render"
+					],
+					"groups": {
+						"instance-variables": [
+							"state"
+						]
+					}
+				}
+			]
+		}
+	}
+}

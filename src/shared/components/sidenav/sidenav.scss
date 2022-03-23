@@ -1,0 +1,87 @@
+.app-sidebar {
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.hamburger-menu-icon {
+	height: 38px;
+	margin-top: -6px;
+	margin-right: 14px;
+
+	button {
+		border: none;
+		background-color: white;
+		color: black;
+		width: 35px;
+		height: 30px;
+		border-radius: 4px;
+
+		i {
+			font-size: 21px;
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+}
+
+.app-container.small-side-bar {
+	.app-sidebar {
+		width: 100px;
+		min-width: 100px;
+		max-width: 100px;
+	}
+
+	.side-nav {
+		width: 100px;
+
+		.user-profile {
+			justify-content: center;
+		}
+
+		.user-avatar {
+			margin: 0 !important;
+		}
+
+		ul.nav-menu li {
+			text-align: center;
+
+			i {
+				margin: 0;
+			}
+		}
+
+		.nav-menu {
+			li {
+				span.nav-text {
+					display: none !important;
+				}
+			}
+		}
+
+		.user-profile {
+			.user-detail {
+				display: none !important;
+			}
+		}
+
+		ul.nav-menu li.menu+.nav-header {
+			margin-right: 10px;
+			margin-left: 10px;
+			margin-top: 10px;
+			padding-top: 20px;
+			padding: 20px 0 10px;
+		}
+
+		.menu {
+			a {
+				display: block !important;
+			}
+		}
+	}
+}
+
+.app-container.small-side-bar .side-nav .nav-menu li span.nav-text {
+	display: flex !important;
+	justify-content: center;
+	font-size: 11px;
+}

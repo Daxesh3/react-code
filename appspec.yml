@@ -1,0 +1,30 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/playtime-deploy
+permissions:
+  - object: /home/ubuntu/playtime-frontend/
+    owner: root
+    mode: 770
+    type:
+      - directory
+hooks:
+  ApplicationStop:
+    - location: deployment/remove.sh
+      timeout:
+      runas:
+
+  BeforeInstall:
+    - location: deployment/remove.sh
+      timeout:
+      runas:
+
+  AfterInstall:
+    - location: deployment/remove.sh
+      timeout:
+      runas:
+  ApplicationStart:
+    - location: deployment/start.sh
+      timeout:
+      runas:

@@ -1,0 +1,10 @@
+.login-image {
+	cursor: pointer;
+}
+.login-image > img {
+	width: 100%;
+}
+
+.app-login-content {
+	padding: 25px 30px 20px;
+}

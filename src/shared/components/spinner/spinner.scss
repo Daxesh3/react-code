@@ -1,0 +1,22 @@
+.spinner-wrapper {
+	width: 100%;
+	text-align: center;
+	padding: 20px 10px;
+}
+
+.paginate {
+	min-height: 450px;
+}
+
+.form-loader {
+	position: relative;
+	.form-overlay-loader {
+		z-index: 111;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: rgba($color: #ffffff, $alpha: 0.75)
+	}
+}
